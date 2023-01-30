@@ -2,7 +2,15 @@
 
 #include <stdio.h>
 
-//program to calculate the gradng system of a school using If statement
+/**
+ * description: A program for a school gradig system
+ * 80 - 100 == A
+ * 70 - 79 == B
+ * 65 - 69 == C
+ * 60 - 64 == D
+ * 50 - 59 == E
+ * 0 - 40 == F
+ */
 
 int main() {
 
@@ -12,7 +20,7 @@ int main() {
 
     scanf("%d\n", &score);
 
-    if (score >= 70 && score <= 100)
+    if (score >= 80 && score <= 100)
 
     {
 
@@ -20,7 +28,7 @@ int main() {
 
     }
 
-    else if (score >= 60 && score <= 69)
+    else if (score >= 70 && score <= 79)
 
     {
 
@@ -28,7 +36,7 @@ int main() {
 
     }
 
-    else if (score >= 50 && score <= 59)
+    else if (score >= 65 && score <= 69)
 
     {
 
@@ -36,7 +44,7 @@ int main() {
 
     }
 
-    else if (score >= 40 && score <= 49)
+    else if (score >= 60 && score <= 64)
 
     {
 
@@ -44,7 +52,7 @@ int main() {
 
     }
 
-    else if (score >= 30 && score <= 39)
+    else if (score >= 50 && score <= 59)
 
     {
 
@@ -52,13 +60,17 @@ int main() {
 
     }
 
-    else if (score >= 0 && score <= 29)
+    else if (score >= 0 && score <= 40)
 
     {
 
         printf("F");
 
     }
+    else
+	{
+		printf("The grade you entered is invalid");
+	}
 
     return (0);
 
